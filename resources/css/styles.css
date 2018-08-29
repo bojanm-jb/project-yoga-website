@@ -1,0 +1,1475 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    color: #5f5f5f;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease,background-color 0.3s ease,border-color 0.3s ease,box-shadow 0.3s ease;
+    -o-transition: color 0.3s ease,background-color 0.3s ease,border-color 0.3s ease,box-shadow 0.3s ease;
+    transition: color 0.3s ease,background-color 0.3s ease,border-color 0.3s ease,box-shadow 0.3s ease;
+}
+
+/* Navigation */
+.jb-header-navigation {
+    border-bottom: 1px solid #000000;
+    padding: 10px 0;
+    background: linear-gradient(to right, #030406 0%, #464a54 50%, #030406 100%);
+}
+.jb-header-navigation .jb-header-container #bs-example-navbar-collapse-9 ul li.active a {
+     background-color: transparent;
+     color: #fff;
+ }
+.jb-header-navigation .jb-header-container #bs-example-navbar-collapse-9 ul li a {
+    text-transform: uppercase;
+    color: #fff;
+}
+.jb-header-navigation .jb-header-container #bs-example-navbar-collapse-9 ul li:after {
+    width: 0;
+    height: 2px;
+    background-color: #e21319;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+.jb-header-navigation .jb-header-container #bs-example-navbar-collapse-9 ul li:hover:after {
+    width: 100%;
+    height: 2px;
+    background-color: #e21319;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+.jb-header-navigation .jb-header-container #bs-example-navbar-collapse-9 ul li.active:after {
+    width: 100%;
+    height: 2px;
+    background-color: #e21319;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+.jb-header-navigation .jb-header-container #bs-example-navbar-collapse-9 ul.jb-navigation-list {
+    float: right;
+}
+.jb-header-navigation .jb-header-container .navbar-header a.navbar-brand {
+    padding: 3px 15px;
+}
+.jb-header-navigation .jb-header-container #bs-example-navbar-collapse-9 ul li ul.nav .dropdown-menu {
+    background-color: #14161c;
+    box-shadow: 0 6px 12px rgba(144, 143, 143, 0.175);
+    border: 1px solid rgba(255, 243, 243, 0.15);
+}
+.jb-header-navigation .jb-header-container .navbar-header a.navbar-brand  img {
+	height: 45px;
+	width: 45px;
+	display: block;
+}
+
+section.jb-main-content {
+	min-height: 1000px;
+    height: auto;
+    display: block;
+    margin-top: 71px;
+	background-color: #F4F4F4;
+}
+
+footer.footer-distributed .footer-right .footer-icons {
+    margin-top: 60px;
+}
+
+
+/* Main content - header image */
+section.jb-main-content .header-image {
+    background-image: url(https://artyogaabundance.000webhostapp.com/wp-content/themes/jb-yogatheme/resources/images/banner.jpg);
+    display: block;
+    position: relative;
+    height: 890px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.jb-main-content .header-image .header-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.4;
+}
+
+section.jb-main-content .header-image .header-info .header-buttons .site-branding {
+    margin-bottom: 0px;
+    bottom: 0;
+    display: block;
+    left: 0;
+    height: auto;
+    padding-top: 0;
+    position: absolute;
+    width: 100%;
+    vertical-align: bottom;
+    padding: 3em 0;
+    transition: margin-bottom 0.2s;
+    z-index: 3;
+}
+
+section.jb-main-content .header-image .header-info .header-buttons .site-branding .wrap {
+    position: relative;
+    max-width: 1000px;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.jb-main-content .header-image .header-info .header-buttons .site-branding .wrap .site-branding-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.jb-main-content .header-image .header-info .header-buttons .site-branding .wrap .site-branding-text h1 {
+    clear: none;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 0;
+    font-size: 36px;
+    opacity: 1;
+}
+
+section.jb-main-content .header-image .header-info .header-buttons .site-branding .wrap .site-branding-text a {
+    text-decoration: none;
+    transition: opacity 0.2s;
+    color: #fff;
+    opacity: 1;
+    font-size: 2.25rem;
+    font-size: 36px;
+}
+
+section.jb-main-content .header-image .header-info .header-buttons .site-branding .wrap .site-branding-text p {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+section.jb-main-content .header-image .header-info .header-buttons .jb-menu-scroll-down {
+    color: #fff;
+    top: 2em;
+    display: block;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+section.jb-main-content .header-image .header-info .header-buttons .jb-menu-scroll-down .icon-arrow-right {
+    display: inline-block;
+    fill: currentColor;
+    position: relative;
+    top: -2.062em;
+    vertical-align: middle;
+    transform: rotate(90deg);
+    height: 18px;
+    width: 18px;
+}
+
+section.jb-main-content .header-image .header-info .header-buttons .jb-menu-scroll-down .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    color: #fff;
+    top: 2em;
+}
+
+
+
+/* INDEX PAGE: Main content containers */
+section.jb-main-content .jb-slider-container {
+	margin: 0 auto;
+	display: block;
+	height: auto;
+	background: white;
+}
+
+section.jb-main-content .jb-content-container {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+section.jb-main-content .jb-testemonials-container {
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+/* INDEX PAGE: Video slider styles
+*/
+section.jb-main-content .jb-content-container .jb-videos-slider-container .rvs-item-container .rvs-item-stage .rvs-item {
+    background: center left no-repeat;
+    background-size: cover;
+    background-color: inherit;
+}
+
+section.jb-main-content .jb-content-container .jb-videos-slider-container .rvs-nav-container .rvs-nav-stage .rvs-nav-item.rvs-active {
+    border-color: #474648;
+    background-color: #474648;
+}
+
+
+
+/* INSTAGRAM items
+*/
+section.jb-main-content .jb-instagram .content-item .panel {
+    background-color: #fff;
+    border: 1px solid rgb(234, 234, 234);
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body {
+    padding: 0;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body  .content-image {
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body  .content-image a {
+    color: #428bca;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    display: block;
+    padding: 10px 10px;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body  .content-image a img {
+    border-radius: 6px 6px 0 0;
+    width: auto;
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    max-height: 280px;
+    max-width: 100%;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body  .content-image .video-btn {
+    display: none;
+    position: absolute;
+    background-color: rgba(61, 103, 114, .2);
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    right: 10px;
+    padding-left: 3px;
+    line-height: 30px;
+    top: 10px;
+    height: 30px;
+    padding-top: 8px;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body  .content-image .video-btn a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body  .content-image .video-btn a.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body .panel-footer {
+    padding: 12px 15px 0;
+    background-color: transparent;
+    border-color: #e6e6e6;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body .panel-footer .profile-details a {
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 2px;
+    line-height: 40px;
+    color: #3D6772;
+    transition: color .3s ease-in;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body .panel-footer .profile-details .profile-img {
+    margin-right: 12px;
+    float: left;
+    background-color: #11aea5;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body .panel-footer .profile-details .profile-img img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    vertical-align: middle;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .panel-body p {
+    font-size: 13px;
+    padding: 12px 15px 15px;
+    margin: 0;
+    line-height: 22px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .comments-like {
+    float: right;
+    background-color: #fff;
+    padding: 12px 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid rgb(234, 234, 234);
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .comments-like .post-wl {
+    text-align: center;
+    font-size: 12px;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .comments-like .post-wl .time {
+    margin-left: 5px;
+    color: grey;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .comments-like .post-wl .time .fa {
+    display: inline-block;
+    text-rendering: auto;
+    color: grey;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .comments-like .post-wl .comments {
+    margin-left: 5px;
+    color: #517fa4;
+    text-align: center;
+    font-size: 12px;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .comments-like .post-wl .comments .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;text-rendering: auto;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .comments-like .post-wl .like {
+    margin-left: 5px;
+    color: #e54c42;
+    text-align: center;
+}
+
+section.jb-main-content .jb-instagram .content-item .panel .comments-like .post-wl .like .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+}
+
+footer.footer-distributed {
+    font-family: 'Alegreya';
+}
+
+
+
+/* Testemonials elements styling */
+section.jb-main-content .jb-testemonials-container .row.content {
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section.jb-main-content .jb-testemonials-container .jb-testemonials-img-wrapper img {
+	vertical-align: middle;
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+section.jb-main-content .jb-testemonials-container .jb-testemonials-quote-wrapper .testimonial-content {
+	padding-left: 50px;
+    position: relative;
+}
+
+section.jb-main-content .jb-testemonials-container .jb-testemonials-quote-wrapper .testimonial-content:before {
+	content: '\201C';
+    position: absolute;
+    top: -60px;
+    left: -5px;
+    font-size: 120px;
+    color: #fe6367;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+section.jb-main-content .jb-testemonials-container .jb-testemonials-quote-wrapper .testimonial-content p.text {
+	font-size: 17px;
+    font-style: italic;
+    width: 75%;
+    color: #5f5f5f;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+section.jb-main-content .jb-testemonials-container .jb-testemonials-quote-wrapper .testimonial-content p .text-primary {
+	color: #2a8391;
+}
+
+
+
+/* POSTS PAGE */
+
+section.jb-main-content  h2 {
+    margin-top: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #008391;
+    position: relative;
+    letter-spacing: 3px;
+    line-height: 1.7;
+    font-weight: bold;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12);
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(234, 234, 234);
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body {
+    padding: 0;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body  .content-image {
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body  .content-image .icon {
+    text-align: center;
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body  .content-image .icon .glyphicon {
+    display: inline-block;
+    font-size: 22px;
+    width: 52px;
+    height: 52px;
+    color: #fff;
+    line-height: 48px;
+    box-shadow: 3px 6px 6px rgba(0,0,0,.25);
+    background-color: #ff4f1f;
+    z-index: 99;
+    position: relative;
+    top: 130px;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body  .content-image a {
+    color: #428bca;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    display: block;
+    padding: 10px 0;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body  .content-image a img {
+    border-radius: 6px 6px 0 0;
+    width: auto;
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    max-height: 280px;
+    max-width: 100%;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body  .content-image .video-btn {
+    display: none;
+    position: absolute;
+    background-color: rgba(61, 103, 114, .2);
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    right: 10px;
+    padding-left: 3px;
+    line-height: 30px;
+    top: 10px;
+    height: 30px;
+    padding-top: 8px;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body  .content-image .video-btn a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body  .content-image .video-btn a.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper.content-item .panel .panel-body .panel-footer {
+    padding: 12px 15px 0;
+    background-color: transparent;
+    border-color: #e6e6e6;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body .panel-footer .profile-details a {
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 2px;
+    line-height: 40px;
+    color: #3D6772;
+    transition: color .3s ease-in;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body .panel-footer .profile-details .profile-img {
+    margin-right: 12px;
+    float: left;
+    background-color: #11aea5;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body .panel-footer .profile-details .profile-img img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    vertical-align: middle;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .panel-body p {
+    font-size: 13px;
+    padding: 12px 15px 15px;
+    margin: 0;
+    line-height: 22px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .comments-like {
+    float: right;
+    background-color: #fff;
+    padding: 12px 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    border-top: 1px solid #e1e1e1;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .comments-like .post-wl {
+    text-align: center;
+    font-size: 12px;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .comments-like .post-wl .time {
+    margin-left: 5px;
+    color: grey;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .comments-like .post-wl .time .fa {
+    display: inline-block;
+    text-rendering: auto;
+    color: grey;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .comments-like .post-wl .comments {
+    margin-left: 5px;
+    color: #517fa4;
+    text-align: center;
+    font-size: 12px;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .comments-like .post-wl .comments .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;text-rendering: auto;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper .content-item .panel .comments-like .post-wl .like {
+    margin-left: 5px;
+    color: #e54c42;
+    text-align: center;
+}
+
+section.jb-main-content .jb-articles-insta-wrapper  .content-item .panel .comments-like .post-wl .like .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+}
+
+footer.footer-distributed {
+    font-family: 'Alegreya';
+}
+
+
+
+
+
+    /* ABOUT US PAGE */
+section.jb-main-content .jb-about-us-wrapper {
+    background-color: rgb(37, 37, 39);
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about {
+    padding: 4rem;
+    margin-bottom: 2rem;
+    font-family: 'Teko', sans-serif;
+    margin-top: 50px;
+    font-family: 'Alegreya';
+    color: #fff;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members {
+    padding-top: 30px;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image {
+    position: relative;
+    width: 33%;
+    margin: 0 auto;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image:hover .overlay {
+    opacity: 1;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image .overlay {
+    background: rgba(20, 20, 20, 0.7) none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image .overlay .vertical-align-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image .overlay .vertical-align-table .vertical-align-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image .overlay .vertical-align-table .vertical-align-cell p {
+    color: #d4d4d4;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image .overlay .vertical-align-table .vertical-align-cell ul {
+    list-style: outside none none;
+    padding: 0;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image .overlay .vertical-align-table .vertical-align-cell ul li {
+    display: inline-block;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image .overlay .vertical-align-table .vertical-align-cell ul li a {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff !important;
+    display: inline-block;
+    height: 37px;
+    -webkit-transform: translateY(30px);
+    -moz-transition: all 0.3s ease 0s;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image .overlay .vertical-align-table .vertical-align-cell ul li fa {
+    font-size: 14px;
+    line-height: 37px;
+    -moz-transition: all 0.2s linear 0s;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members h4 {
+    margin-bottom: 9px;
+    margin-top: 30px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members p {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 28px;
+    margin: 0 0 10px;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-about .text-justify {
+    max-width: 74rem;
+    margin-right: auto;
+    text-align: justify;
+    margin-left: auto;
+    font-size: 15px;
+}
+
+section.jb-main-content .jb-form-container {
+    color: #fff;
+    font-family: "Montserrat", serif;
+    margin-top: 100px;
+}
+
+section.jb-main-content .jb-form-container .jb-form h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0 0 50px;
+    line-height: 1;
+    letter-spacing: 0.18em;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry {
+    margin: 0;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content {
+    margin-bottom: 0
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content a {
+    color: #fff;
+    transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+    outline: none;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container {
+    background: none;
+    border: 0 none;
+    -webkit-border-radius: 0;
+    float: none;
+    font-size: 100%;
+    height: auto;
+    letter-spacing: normal;
+    list-style: none;
+    outline: none;
+    position: static;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    width: auto;
+    visibility: visible;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate {
+    box-sizing: border-box;
+    font-size: 100%;
+    letter-spacing: normal;
+    list-style: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    visibility: visible;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpforms-field-container  {
+    padding: 10px 0;
+    clear: both;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpforms-field-container .wpforms-field-label {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    float: none;
+    line-height: 1.3;
+    margin: 0 0 4px 0;
+    padding: 0;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpforms-field-container .wpforms-field-label .wpforms-required-label {
+    color: #ff0000;
+    font-weight: 400;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpforms-field-container .wpforms-field-large {
+    background-color: #fff;
+    border-radius: 2px;
+    color: #333;
+    -moz-box-sizing: border-box;
+    display: block;
+    float: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 38px;
+    width: 100%;
+    line-height: 1.3;
+    max-width: 100%;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpforms-field-1-container {
+    padding: 10px 0;
+    clear: both;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpform-field {
+    display: none !important;
+    position: absolute !important;
+    left: -9000px !important;
+    padding: 10px 0;
+    clear: both;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpform-field .wpforms-field-label {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    float: none;
+    line-height: 1.3;
+    margin: 0 0 4px 0;
+    padding: 0;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpform-field .wpforms-field-medium {
+    background-color: #fff;
+    border-radius: 2px;
+    color: #333;
+    -moz-box-sizing: border-box;
+    display: block;
+    float: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 38px;
+    width: 100%;
+    line-height: 1.3;
+    max-width: 60%;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpforms-submit-container input {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    background: none;
+    height: auto;
+    box-sizing: border-box;
+}
+
+section.jb-main-content .jb-form-container .jb-form .entry .entry-content .wpforms-container .wpforms-validate .wpforms-submit-container .wpforms-submit {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+
+section.jb-main-content .jb-form-container .widget_ci-contact-info {
+    margin: 0 0 50px;
+}
+
+section.jb-main-content .jb-form-container .widget_ci-contact-info h3 {
+    position: relative;
+    border: 2px solid #505050;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Montserrat", serif;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    word-wrap: break-word;
+    font-weight: normal;
+}
+
+section.jb-main-content .jb-form-container .widget_ci-contact-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section.jb-main-content .jb-form-container .widget_ci-contact-info ul li {
+    border-bottom: 1px solid #363636;
+    display: block;
+    margin: 0;
+    padding: 10px 0 !important;
+}
+
+section.jb-main-content .jb-form-container .widget_ci-contact-info ul li.fa {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+section.jb-main-content .jb-form-container .widget_ci-contact-info ul li a {
+    color: #fff;
+}
+
+section.jb-main-content .jb-form-container .widget_text {
+    margin: 0 0 50px;
+}
+
+section.jb-main-content .jb-form-container .widget_text h3 {
+    background: #242424;
+    position: relative;
+    border: 2px solid #505050;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Montserrat", serif;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    word-wrap: break-word;
+    font-weight: normal;
+}
+
+section.jb-main-content .jb-form-container .widget_text p {
+    margin: 0 0 10px;
+    margin-bottom: 0;
+}
+
+section.jb-main-content .jb-about-us-wrapper #about-locations {
+    padding: 4rem;
+    margin-bottom: 2rem;
+}
+
+section.jb-main-content #about-locations .jb-location-iframe {
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+section.jb-main-content  #about-locations iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.jb-main-content #contact {
+    font-family: 'Teko', sans-serif;
+    padding-top: 60px;
+    width: 100%;
+    height: 550px;
+    color : #042626;
+    margin-top: 50px;
+}
+
+section.jb-main-content #contact .contact-section {
+    padding-top: 40px;
+}
+
+section.jb-main-content #contact .contact-section .col-md-6{
+    width: 50%;
+}
+
+section.jb-main-content #contact .form-line {
+    border-right: 1px solid #B29999;
+}
+
+section.jb-main-content #contact .form-group {
+    margin-top: 10px;
+}
+
+section.jb-main-content #contact .form-group label {
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+section.jb-main-content #contact .form-group .form-control {
+    font-size: 1.3em;
+    color: #080808;
+}
+
+section.jb-main-content #contact .form-group textarea.form-control {
+    height: 135px;
+    /* margin-top: px;*/
+}
+
+section.jb-main-content #contact .form-group .submit {
+    font-size: 1.1em;
+    float: right;
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
+
+}
+
+footer.footer-distributed {
+    font-family: 'Alegreya';
+}
+
+
+
+/* Responsive media queries */
+@media (min-width: 1025px) {
+	header .jb-header-container {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	section.jb-main-content {
+		width: 100%;
+	}
+	
+	.jb-slider-container .jb-slider-container-image {
+		display: none;
+	}
+
+    /* INSTAGRAM */
+    section.jb-main-content .jb-instagram {
+        height: auto;
+        min-height: 2100px;
+        display: block;
+        margin-top: 50px;
+    }
+
+    section.jb-main-content .jb-instagram .jb-insta-posts {
+        position: relative;
+    }
+
+    section.jb-main-content .jb-instagram .content1 {
+        height: 805px;
+        position: absolute;
+        left: 33%;
+        width: 32%;
+        top: 0;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-instagram .content2 {
+        height: 820px;
+        position: absolute;
+        top: 385px;
+        left: 0;
+        width: 32%;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-instagram .content3 {
+        height: 820px;
+        position: absolute;
+        left: 33%;
+        top: 780px;
+        width: 32%;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-instagram .content4 {
+        height: 820px;
+        position: absolute;
+        left: 66%;
+        top: 385px;
+        width: 32%;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-instagram .content5 {
+        height: 820px;
+        position: absolute;
+        left: 0;
+        top: 1190px;
+        width: 32%;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-instagram .content6 {
+        height: 820px;
+        position: absolute;
+        left: 66%;
+        top: 1190px;
+        width: 32%;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-instagram .blank {
+        position: absolute;
+        width: 32%;
+        background-color: #f3f3f3;
+    }
+
+    section.jb-main-content .jb-instagram .blank1 {
+        height: 340px;
+        left: 0;
+        top: 0;
+    }
+
+    section.jb-main-content .jb-instagram .blank2 {
+        height: 340px;
+        left: 66%;
+        top: 0;
+    }
+
+    section.jb-main-content .jb-instagram .blank3 {
+        height: 340px;
+        left: 33%;
+        top: 1615px;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper {
+        height: auto;
+        min-height: 2100px;
+        display: block;
+        margin-top: 50px;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos {
+        position: relative;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .blank {
+        position: absolute;
+        width: 32%;
+        background-color: #f3f3f3;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .blank1 {
+        height: 340px;
+        left: 0;
+        top: 0;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .blank2 {
+        height: 340px;
+        left: 66%;
+        top: 0;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .blank3 {
+        height: 340px;
+        left: 33%;
+        top: 1581px;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .content1 {
+        height: 805px;
+        position: absolute;
+        left: 33%;
+        width: 32%;
+        top: 0;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .content2 {
+        height: 820px;
+        position: absolute;
+        top: 346px;
+        left: 0;
+        width: 32%;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .content3 {
+        height: 820px;
+        position: absolute;
+        left: 33%;
+        top: 810px;
+        width: 32%;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .content4 {
+        height: 820px;
+        position: absolute;
+        left: 66%;
+        top: 346px;
+        width: 32%;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .content5 {
+        height: 820px;
+        position: absolute;
+        left: 0;
+        top: 1190px;
+        width: 32%;
+        padding: 0;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .content6 {
+        height: 820px;
+        position: absolute;
+        left: 66%;
+        top: 1190px;
+        width: 32%;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 992px)
+    and (max-width: 1024px) {
+
+    /* INSTAGRAM */
+    section.jb-main-content .jb-instagram {
+        height: auto;
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    section.jb-main-content .jb-instagram .jb-insta-posts {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    section.jb-main-content .jb-instagram .jb-insta-posts .blank {
+        display: none;
+    }
+
+    section.jb-main-content .jb-instagram .jb-insta-posts .content-item {
+        width: 33%;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper {
+        height: auto;
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos .blank {
+        display: none;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos .content-item {
+        width: 33%;
+    }
+
+    section.jb-main-content .jb-about-us-wrapper #about-about {
+        padding: 0;
+        margin-bottom: 2rem;
+        margin-top: 50px;
+        font-family: 'Alegreya';
+        color: #fff;
+    }
+
+    section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image {
+        position: relative;
+        width: 45%;
+    }
+}
+
+@media (min-width: 768px)
+    and (max-width: 991px) {
+    section.jb-main-content .jb-instagram {
+        height: auto;
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    section.jb-main-content .jb-instagram .jb-insta-posts {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    section.jb-main-content .jb-instagram .jb-insta-posts .blank {
+        display: none;
+    }
+
+    section.jb-main-content .jb-instagram .jb-insta-posts .content-item {
+        width: 50%;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos {
+        height: auto;
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos .blank {
+        display: none;
+    }
+
+    section.jb-main-content .jb-about-us-wrapper #about-about {
+        padding: 0;
+        margin-bottom: 2rem;
+        margin-top: 50px;
+        font-family: 'Alegreya';
+        color: #fff;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos .content-item {
+        width: 50%;
+    }
+
+    section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image {
+        position: relative;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    section.jb-main-content .jb-content-container {
+        display: none;
+    }
+
+    section.jb-main-content .jb-instagram {
+        display: block;
+        position: static;
+    }
+
+    section.jb-main-content .jb-instagram .blank {
+        display: none;
+    }
+
+    section.jb-main-content .jb-instagram .content-item {
+        width: 100%;
+        display: block;
+        padding: 0;
+        height: 787px;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper {
+        display: block;
+        position: static;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos .blank {
+        display: none;
+    }
+
+    section.jb-main-content .jb-articles-insta-wrapper .insta-videos .content-item {
+        width: 100%;
+        display: block;
+        padding: 0;
+        height: 787px;
+    }
+
+    section.jb-main-content .jb-about-us-wrapper #about-about {
+        padding: 0;
+        margin-bottom: 2rem;
+        margin-top: 50px;
+        font-family: 'Alegreya';
+        color: #fff;
+    }
+
+    section.jb-main-content .jb-about-us-wrapper #about-about .wpb_column .vc_column-inner .wpb_wrapper .team-members .team-image {
+        position: relative;
+        width: 100%;
+    }
+}
+
+    
+
